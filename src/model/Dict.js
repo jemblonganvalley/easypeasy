@@ -23,6 +23,10 @@ export let globalData = createStore({
         },
     ],
 
+    setUserData : action((state, payload)=>{
+        state.userData.push(payload)
+    }),
+
     product : [
         {
             id : 1,
